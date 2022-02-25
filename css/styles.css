@@ -34,65 +34,183 @@ body {
 .container {
   max-width: 1200px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  margin: auto;
   padding: 0px 30px;
 }
 
 /* Header */
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 80px;
-  background-color: white;
+  height: auto;
+  color: white;
+  background-color: transparant;
 }
 
-header.shadow {
+header .introduction-spacer {
+  width: 100%;
+  height: 270px;
+  padding: 10px 0px;
+}
+
+header .introduction-spacer .introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+header .introduction-spacer .introduction .options {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .introduction-spacer .introduction .options ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+
+header .introduction-spacer .introduction .options:last-child ul {
+  justify-content: end;
+}
+
+header .introduction-spacer .introduction .options ul li {
+  position: relative;
+  margin-left: 40px;
+}
+
+header .introduction-spacer .introduction .options ul li:first-child {
+  margin-left: 0px;
+}
+
+header .introduction-spacer .introduction .options ul li::before {
+  content: "•";
+  position: absolute;
+  left: -23px;
+  top: 1px;
+}
+
+header .introduction-spacer .introduction .options ul li:first-child::before {
+  content: "";
+  display: none;
+}
+
+header .introduction-spacer .introduction .options ul li a {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+header .introduction-spacer .introduction .options ul li a:hover {
+  text-decoration: underline;
+}
+
+header .introduction-spacer .introduction .logo {
+  display: flex;
+  width: 250px;
+}
+
+header .introduction-spacer .introduction .logo img {
+}
+
+header nav {
+  width: 100%;
+  height: 65px;
+  border-top: 1px solid rgba(161, 161, 161, 0.3);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.3);
+}
+
+header nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
   -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
-header nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-
 header nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
   list-style-type: none;
 }
 
-header nav ul a {
-  width: 20%;
-  color: rgba(0, 0, 0, 0.45);
+header nav ul li {
+  position: relative;
+  margin-left: 60px;
 }
 
-header nav ul a:hover {
-  color: rgba(0, 0, 0, 0.85);
+header nav ul li:first-child {
+  margin-left: 0px;
 }
 
-header nav ul a.active {
-  color: rgba(0, 0, 0, 0.85);
+header nav ul li::before {
+  content: "•";
+  position: absolute;
+  left: -33px;
+  top: 1px;
 }
 
-/* header nav ul li {
+header nav ul li:first-child::before {
+  content: "";
+  display: none;
+}
+
+header nav ul li a {
+  color: rgb(170, 170, 170);
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  header .introduction-spacer .introduction .options ul li a {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  header .introduction-spacer .introduction {
+    justify-content: center;
+  }
+
+  header .introduction-spacer .introduction .options {
+    display: none;
+  }
 }
 
 /* Landing */
-/* .landing {
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../media/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-
-.landing img {
-} */

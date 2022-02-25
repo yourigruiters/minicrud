@@ -1,11 +1,11 @@
-const header = $("header");
+const nav = document.querySelector("nav");
+const introduction = document.querySelector(".introduction-spacer");
 
 $(window).scroll(function (e) {
-  if (header.offset().top !== 0) {
-    if (!header.hasClass("shadow")) {
-      header.addClass("shadow");
-    }
+  console.log(introduction.offsetHeight);
+  if (window.pageYOffset > introduction.offsetHeight) {
+    nav.classList.add("sticky");
   } else {
-    header.removeClass("shadow");
+    nav.classList.remove("sticky");
   }
 });
