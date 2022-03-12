@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -16,6 +15,20 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h1.dancing,
+h2.dancing,
+h3.dancing,
+h4.dancing,
+h5.dancing,
+h6.dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+p {
+  font-size: 18px;
+  line-height: 36px;
+}
+
 a {
   text-decoration: none;
 }
@@ -25,9 +38,8 @@ img {
   width: 100%;
 }
 
-/* TEMPORARY */
 body {
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 /* Container */
@@ -88,7 +100,12 @@ header .introduction-spacer .introduction .options:last-child ul {
 
 header .introduction-spacer .introduction .options ul li {
   position: relative;
+  display: flex;
   margin-left: 40px;
+}
+
+header .introduction-spacer .introduction .options ul li i {
+  margin-right: 5px;
 }
 
 header .introduction-spacer .introduction .options ul li:first-child {
@@ -107,13 +124,16 @@ header .introduction-spacer .introduction .options ul li:first-child::before {
   display: none;
 }
 
-header .introduction-spacer .introduction .options ul li a {
+header .introduction-spacer .introduction .options ul li a,
+header .introduction-spacer .introduction .options ul li p {
+  display: inline-block;
   color: white;
   font-size: 14px;
   letter-spacing: 2px;
 }
 
-header .introduction-spacer .introduction .options ul li a:hover {
+header .introduction-spacer .introduction .options ul li a:hover,
+header .introduction-spacer .introduction .options ul li p:hover {
   text-decoration: underline;
 }
 
@@ -133,6 +153,7 @@ header nav {
 
 header nav.sticky {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-color: black;
@@ -234,7 +255,8 @@ header nav ul li a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  header .introduction-spacer .introduction .options ul li a {
+  header .introduction-spacer .introduction .options ul li a,
+  header .introduction-spacer .introduction .options ul li p {
     font-size: 12px;
     letter-spacing: 1px;
   }
@@ -272,6 +294,23 @@ header nav ul li a:hover {
   }
 }
 
+/* Section */
+section {
+  padding: 125px 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  section {
+    padding: 100px 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 75px 20px;
+  }
+}
+
 /* Landing */
 .landing {
   display: flex;
@@ -284,4 +323,206 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+}
+
+/* About */
+.about-spacer {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.about .heading h3 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #c0392b;
+  margin-bottom: 5px;
+}
+
+.about .heading hr {
+  position: relative;
+  width: 350px;
+  height: 3px;
+  border: 0;
+  margin-bottom: 15px;
+  background-color: #e74c3c;
+  border-radius: 1000%;
+  overflow: visible;
+}
+
+.about .heading hr::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #e74c3c;
+  display: inline-block;
+  border: 2px solid #e74c3c;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  margin: 0 0 0 -3px;
+}
+
+.about .content {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  text-align: center;
+}
+
+.about .content p {
+  color: #7f8c8d;
+  font-family: "Merriweather", serif;
+}
+
+/* Reservation */
+.reservation-spacer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 300px;
+  background-image: url("../media/salads.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.reservation {
+}
+
+/* Restaurants */
+.restaurants-spacer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurants .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.restaurants .heading h3 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #f1c40f;
+  margin-bottom: 5px;
+}
+
+.restaurants .heading hr {
+  position: relative;
+  width: 350px;
+  height: 3px;
+  border: 0;
+  margin-bottom: 15px;
+  background-color: #f1c40f;
+  border-radius: 1000%;
+  overflow: visible;
+}
+
+.restaurants .heading hr::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #f1c40f;
+  display: inline-block;
+  border: 2px solid #f1c40f;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  margin: 0 0 0 -3px;
+}
+
+.restaurants .content {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  text-align: center;
+}
+
+.restaurants .content p {
+  color: #ecf0f1;
+  font-family: "Merriweather", serif;
+}
+
+.restaurants .locations {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  width: 100%;
+  height: auto;
+  margin-top: 75px;
+}
+
+.restaurants .locations .location {
+  width: 100%;
+  height: 10px;
+  background-color: red;
+}
+
+/* Menu */
+.menu-spacer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.menu .image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../media/salads.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.menu .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu .content {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
