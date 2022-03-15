@@ -354,7 +354,13 @@ section {
   margin-bottom: 5px;
 }
 
-.about .heading hr {
+.about .heading .divider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about .heading .divider hr {
   position: relative;
   width: 350px;
   height: 3px;
@@ -365,20 +371,14 @@ section {
   overflow: visible;
 }
 
-.about .heading hr::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  background: #e74c3c;
-  display: inline-block;
-  border: 2px solid #e74c3c;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.about .heading .divider i {
   position: absolute;
-  top: -4px;
-  left: 50%;
-  margin: 0 0 0 -3px;
+  top: -11.5px;
+  color: #e74c3c;
+  background-color: #fff;
+  border: 2px solid #e74c3c;
+  padding: 5px;
+  border-radius: 100%;
 }
 
 .about .content {
@@ -439,7 +439,13 @@ section {
   margin-bottom: 5px;
 }
 
-.restaurants .heading hr {
+.restaurants .heading .divider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.restaurants .heading .divider hr {
   position: relative;
   width: 350px;
   height: 3px;
@@ -450,20 +456,14 @@ section {
   overflow: visible;
 }
 
-.restaurants .heading hr::before {
-  content: "";
-  width: 9px;
-  height: 9px;
-  background: #f1c40f;
-  display: inline-block;
-  border: 2px solid #f1c40f;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.restaurants .heading .divider i {
   position: absolute;
-  top: -4px;
-  left: 50%;
-  margin: 0 0 0 -3px;
+  top: -11.5px;
+  color: #f1c40f;
+  background-color: #000;
+  border: 2px solid #f1c40f;
+  padding: 5px;
+  border-radius: 100%;
 }
 
 .restaurants .content {
