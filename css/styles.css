@@ -116,7 +116,11 @@ header .introduction-spacer .introduction .options ul li::before {
   content: "•";
   position: absolute;
   left: -23px;
-  top: 1px;
+  top: 9px;
+}
+
+header .introduction-spacer .introduction .options ul li.icon::before {
+  top: 0px;
 }
 
 header .introduction-spacer .introduction .options ul li:first-child::before {
@@ -351,7 +355,7 @@ section {
   font-size: 80px;
   font-weight: bold;
   color: #c0392b;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .about .heading .divider {
@@ -436,7 +440,7 @@ section {
   font-size: 80px;
   font-weight: bold;
   color: #f1c40f;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .restaurants .heading .divider {
@@ -488,9 +492,24 @@ section {
 }
 
 .restaurants .locations .location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 10px;
-  background-color: red;
+  height: auto;
+}
+
+.restaurants .locations .location img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.restaurants .locations .location h5 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Menu */
@@ -525,4 +544,36 @@ section {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+/* Maps */
+.maps-spacer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.maps-spacer iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 15px 0px;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  background-color: black;
+}
+
+footer h6 {
+  font-size: 12px;
+  color: #aaaaaa;
+  font-family: "Raleway", sans-serif;
 }
