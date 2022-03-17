@@ -18,56 +18,9 @@
     ></script>
   </head>
   <body>
-    <header>
-      <section class="introduction-spacer">
-        <div class="container">
-          <div class="introduction">
-            <div class="options">
-              <ul>
-                <li><a href="#">Delicious</a></li>
-                <li>
-                  <a href="#"
-                    ><i class="fa-solid fa-house"></i>
-                    <p>Tangamanga, San Luis</p></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="logo">
-              <img src="media/logo.png" alt="logo" />
-            </div>
-            <div class="options">
-              <ul>
-                <li>
-                  <a href="#"><i class="fa-solid fa-phone"></i>+224 882 228</a>
-                </li>
-                <li class="icon">
-                  <a href="#"
-                    ><i class="fa-solid fa-envelope"></i>info@texican.org</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <nav>
-        <div class="logo">
-          <a href="#top"><img src="media/logo.png" alt="logo" /></a>
-        </div>
-        <div class="container">
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Our restaurants</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="hamburger"><button>Menu</button></div>
-        </div>
-      </nav>
-    </header>
+    <?php 
+      include('includes/header.php');
+    ?>
     <section class="landing"></section>
     <section class="about-spacer">
       <div class="container">
@@ -92,7 +45,44 @@
     </section>
     <section class="reservation-spacer">
       <div class="container">
-        <div class="reservation"></div>
+        <div class="reservation">
+          <h3>Make a reservation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perspiciatis facilis quaerat maiores omnis laudantium. Lorem ipsum dolor semit.</p>
+          <form action="">
+            <div class="row">
+              <div class="input-container">
+                <label>Naam</label>
+                <input type="text" placeholder="Juan Pedro" />
+              </div>
+              <div class="input-container">
+                <label>Email adres</label>
+                <input type="email" placeholder="juanpedro@info.org" />
+              </div>
+              <div class="input-container">
+                <label>Aantal personen</label>
+                <input type="number" placeholder="2" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-container">
+                <label>Restaurant</label>
+                <select>
+                  <option value="">Tangamanga</option>
+                  <option value="">Vértiz</option>
+                  <option value="">Narvarte</option>
+                </select>
+              </div>
+              <div class="input-container">
+                <label>Datum</label>
+                <input type="datetime-local" />
+              </div>
+              <div class="input-container">
+                <label></label>
+                <button type="submit">Make reservation</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <section class="restaurants-spacer">
@@ -114,15 +104,30 @@
           <div class="locations">
             <div class="location">
               <img src="media/restaurant1.jpg" alt="restaurant" />
-              <h5>Jorge Ferreti 120, Tangamanga</h5>
+              <div class="overlay-spacer">
+                <div class="overlay">
+                  <h4>Jorge Ferreti 120</h4>
+                  <h5>Tangamanga</h5>
+                </div>
+              </div>
             </div>
             <div class="location">
               <img src="media/restaurant2.jpg" alt="restaurant" />
-              <h5>Xochicalco 589, Vértiz Narvarte</h5>
+              <div class="overlay-spacer">
+                <div class="overlay">
+                  <h4>Xochicalco 589</h4>
+                  <h5>Vértiz</h5>
+              </div>
+              </div>
             </div>
             <div class="location">
               <img src="media/restaurant3.jpg" alt="restaurant" />
-              <h5>Matías Romero 78, Vértiz Narvarte</h5>
+              <div class="overlay-spacer">
+                <div class="overlay">
+                  <h4>Matías Romero 78</h4>
+                  <h5>Narvarte</h5>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -131,7 +136,6 @@
     <section class="menu-spacer">
       <div class="menu">
         <div class="image">
-          <img src="media/salads.jpeg" alt="salads" />
         </div>
         <div class="content">
           <div class="heading">
@@ -159,6 +163,7 @@
         <i class="fa-solid fa-face-smile"></i> by Youri Gruiters
       </h6>
     </footer>
+    
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
   </body>

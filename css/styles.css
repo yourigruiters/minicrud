@@ -1,3 +1,9 @@
+:root {
+  --red: #c0392b;
+  --yellow: #f1c40f;
+  --green: #27ae60;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -354,7 +360,7 @@ section {
 .about .heading h3 {
   font-size: 80px;
   font-weight: bold;
-  color: #c0392b;
+  color: var(--red);
   margin-bottom: 10px;
 }
 
@@ -370,7 +376,7 @@ section {
   height: 3px;
   border: 0;
   margin-bottom: 15px;
-  background-color: #e74c3c;
+  background-color: var(--red);
   border-radius: 1000%;
   overflow: visible;
 }
@@ -378,9 +384,9 @@ section {
 .about .heading .divider i {
   position: absolute;
   top: -11.5px;
-  color: #e74c3c;
+  color: var(--red);
   background-color: #fff;
-  border: 2px solid #e74c3c;
+  border: 2px solid var(--red);
   padding: 5px;
   border-radius: 100%;
 }
@@ -410,7 +416,89 @@ section {
   background-position: center center;
 }
 
+.reservation-spacer .container {
+  max-width: 900px;
+}
+
 .reservation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.reservation h3 {
+  font-size: 48px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+
+.reservation p {
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 30px;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.reservation form .row {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.reservation form .input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.reservation form .input-container label {
+  min-height: 16.5px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 5px;
+  padding-left: 12px;
+}
+
+.reservation form .input-container input,
+.reservation form .input-container select {
+  width: 100%;
+  height: auto;
+  padding: 7px 12px;
+  border: none;
+}
+
+.reservation form .input-container button {
+  background-color: var(--yellow);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.reservation form .input-container button:hover {
+  background-color: #fff;
 }
 
 /* Restaurants */
@@ -439,7 +527,7 @@ section {
 .restaurants .heading h3 {
   font-size: 80px;
   font-weight: bold;
-  color: #f1c40f;
+  color: var(--yellow);
   margin-bottom: 10px;
 }
 
@@ -455,7 +543,7 @@ section {
   height: 3px;
   border: 0;
   margin-bottom: 15px;
-  background-color: #f1c40f;
+  background-color: var(--yellow);
   border-radius: 1000%;
   overflow: visible;
 }
@@ -463,9 +551,9 @@ section {
 .restaurants .heading .divider i {
   position: absolute;
   top: -11.5px;
-  color: #f1c40f;
+  color: var(--yellow);
   background-color: #000;
-  border: 2px solid #f1c40f;
+  border: 2px solid var(--yellow);
   padding: 5px;
   border-radius: 100%;
 }
@@ -492,23 +580,72 @@ section {
 }
 
 .restaurants .locations .location {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 250px;
+  border: 3px solid var(--yellow);
+}
+
+.restaurants .locations .location:first-child {
+  border: 3px solid var(--red);
+}
+.restaurants .locations .location:last-child {
+  border: 3px solid var(--green);
 }
 
 .restaurants .locations .location img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
   width: 100%;
-  height: 250px;
+  height: 100%;
   margin-bottom: 15px;
 }
 
-.restaurants .locations .location h5 {
-  font-size: 14px;
+.restaurants .locations .location .overlay-spacer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(22 0 0 / 80%);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.restaurants .locations .location .overlay-spacer:hover {
+  opacity: 1;
+}
+
+.restaurants .locations .location .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  border: 1px solid white;
+}
+
+.restaurants .locations .location .overlay h4 {
+  font-size: 16px;
   color: #fff;
   font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+
+.restaurants .locations .location .overlay h5 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
   font-family: "Raleway", sans-serif;
 }
 
@@ -529,7 +666,7 @@ section {
 .menu .image {
   width: 100%;
   height: 100%;
-  background-image: url("../media/salads.jpeg");
+  background-image: url("../media/menu.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -544,6 +681,36 @@ section {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu .image {
+    width: 40%;
+  }
+
+  .menu .content {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .menu .image {
+    width: 30%;
+  }
+
+  .menu .content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .menu .image {
+    width: 20%;
+  }
+
+  .menu .content {
+    width: 80%;
+  }
 }
 
 /* Maps */
