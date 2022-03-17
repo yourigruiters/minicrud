@@ -243,7 +243,7 @@ header .hamburger p {
   transition: 0s;
 }
 
-header nav ul {
+header nav ul.default-menu {
   position: absolute;
   right: -800px;
   display: flex;
@@ -255,40 +255,36 @@ header nav ul {
   transition: right 2s;
 }
 
-header nav.sticky ul {
+header nav.sticky ul.default-menu {
   position: unset;
 }
 
-header nav ul.appear {
+header nav ul.default-menu.appear {
   right: 0;
 }
 
-header nav ul li {
+header nav ul.default-menu li {
   position: relative;
   margin-left: 60px;
 }
 
-header nav ul li.hamburger {
-  display: none;
-}
-
-header nav ul li:first-child {
+header nav ul.default-menu li:first-child {
   margin-left: 0px;
 }
 
-header nav ul li::before {
+header nav ul.default-menu li::before {
   content: "•";
   position: absolute;
   left: -33px;
   top: 1px;
 }
 
-header nav ul li:first-child::before {
+header nav ul.default-menu li:first-child::before {
   content: "";
   display: none;
 }
 
-header nav ul li a {
+header nav ul.default-menu li a {
   color: rgb(170, 170, 170);
   font-family: "Raleway", sans-serif;
   font-size: 12px;
@@ -296,9 +292,51 @@ header nav ul li a {
   text-transform: uppercase;
 }
 
-header nav ul li a.active,
-header nav ul li a:hover {
+header nav ul.default-menu li a.active,
+header nav ul.default-menu li a:hover {
   color: white;
+}
+
+header nav .hamburger-overlay {
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+header nav .hamburger-overlay .hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  list-style-type: none;
+}
+
+header nav .hamburger-overlay .hamburger-menu li {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+header nav .hamburger-overlay .hamburger-menu li a,
+header nav .hamburger-overlay .hamburger-menu li i {
+  color: rgb(170, 170, 170);
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -308,7 +346,7 @@ header nav ul li a:hover {
     letter-spacing: 1px;
   }
 
-  header nav.sticky ul {
+  header nav.sticky ul.default-menu {
     justify-content: end;
   }
 }
@@ -326,13 +364,13 @@ header nav ul li a:hover {
     display: none;
   }
 
-  header nav.sticky ul {
+  header nav.sticky ul.default-menu {
     justify-content: center;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  header nav ul {
+  header nav ul.default-menu {
     display: none;
   }
 
@@ -355,6 +393,15 @@ section {
 @media only screen and (max-width: 600px) {
   section {
     padding: 75px 20px;
+  }
+
+  header nav .hamburger-overlay .hamburger-menu li {
+    margin-bottom: 15px;
+  }
+
+  header nav .hamburger-overlay .hamburger-menu li a {
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 }
 

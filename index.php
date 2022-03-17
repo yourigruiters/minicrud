@@ -21,8 +21,8 @@
     <?php 
       include('includes/header.php');
     ?>
-    <section class="landing"></section>
-    <section class="about-spacer">
+    <section class="landing" id="home"></section>
+    <section class="about-spacer" id="about">
       <div class="container">
         <div class="about">
           <div class="heading">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </section>
-    <section class="reservation-spacer">
+    <section class="reservation-spacer" id="reservation">
       <div class="container">
         <div class="reservation">
           <h3>Make a reservation</h3>
@@ -85,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="restaurants-spacer">
+    <section class="restaurants-spacer" id="restaurants">
       <div class="container">
         <div class="restaurants">
           <div class="heading">
@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="menu-spacer">
+    <section class="menu-spacer" id="menu">
       <div class="menu">
         <div class="image"></div>
         <div class="content">
@@ -147,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section class="maps-spacer">
+    <section class="maps-spacer" id="contact">
       <iframe
         src="https://maps.google.com/maps?q=Jorge%20Ferreti%20120&t=&z=15&ie=UTF8&iwloc=&output=embed"
         frameborder="0"
@@ -156,13 +156,9 @@
         marginwidth="0"
       ></iframe>
     </section>
-    <footer>
-      <h6>
-        © Texican 2022 - Created with a
-        <i class="fa-solid fa-face-smile"></i> by Youri Gruiters
-      </h6>
-    </footer>
-
+    <?php 
+      include('includes/footer.php');
+    ?>
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
   </body>
