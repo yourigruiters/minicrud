@@ -163,6 +163,8 @@
         <i class="fa-solid fa-face-smile"></i> by Youri Gruiters
       </h6>
     </footer>
+
+    <p>Hallo, ik ben Youri</p>
     
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
