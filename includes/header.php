@@ -38,13 +38,13 @@
     <div class="container">
         <ul>
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="#">About</a></li>
         <li><a href="#">Reservation</a></li>
-        <li><a href="#">Our restaurants</a></li>
+        <li><a href="#">Restaurants</a></li>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Contact</a></li>
         </ul>
-        <div class="hamburger"><button>Menu</button></div>
+        <div class="hamburger"><i class="fa-solid fa-burger"></i><p>Menu</p></div>
     </div>
     </nav>
 </header>

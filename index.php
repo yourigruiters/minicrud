@@ -53,7 +53,6 @@
             dolor semit.
           </p>
           <form action="">
-            <div class="row">
               <div class="input-container">
                 <label>Naam</label>
                 <input type="text" placeholder="Juan Pedro" />
@@ -66,8 +65,6 @@
                 <label>Aantal personen</label>
                 <input type="number" placeholder="2" />
               </div>
-            </div>
-            <div class="row">
               <div class="input-container">
                 <label>Restaurant</label>
                 <select>
@@ -84,7 +81,6 @@
                 <label></label>
                 <button type="submit">Make reservation</button>
               </div>
-            </div>
           </form>
         </div>
       </div>
@@ -166,8 +162,6 @@
         <i class="fa-solid fa-face-smile"></i> by Youri Gruiters
       </h6>
     </footer>
-
-    <p>Ik ben Youri</p>
 
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
