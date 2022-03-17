@@ -47,7 +47,11 @@
       <div class="container">
         <div class="reservation">
           <h3>Make a reservation</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perspiciatis facilis quaerat maiores omnis laudantium. Lorem ipsum dolor semit.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            perspiciatis facilis quaerat maiores omnis laudantium. Lorem ipsum
+            dolor semit.
+          </p>
           <form action="">
             <div class="row">
               <div class="input-container">
@@ -117,7 +121,7 @@
                 <div class="overlay">
                   <h4>Xochicalco 589</h4>
                   <h5>Vértiz</h5>
-              </div>
+                </div>
               </div>
             </div>
             <div class="location">
@@ -126,7 +130,7 @@
                 <div class="overlay">
                   <h4>Matías Romero 78</h4>
                   <h5>Narvarte</h5>
-              </div>
+                </div>
               </div>
             </div>
           </div>
@@ -135,8 +139,7 @@
     </section>
     <section class="menu-spacer">
       <div class="menu">
-        <div class="image">
-        </div>
+        <div class="image"></div>
         <div class="content">
           <div class="heading">
             <h3 class="dancing">See our menu</h3>
@@ -164,8 +167,6 @@
       </h6>
     </footer>
 
-    <p>Hallo, ik ben Youri</p>
-    
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
   </body>
