@@ -167,6 +167,8 @@
       </h6>
     </footer>
 
+    <p>Ik ben Youri</p>
+
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
   </body>
