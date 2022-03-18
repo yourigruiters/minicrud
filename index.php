@@ -21,7 +21,11 @@
     <?php 
       include('includes/header.php');
     ?>
-    <section class="landing" id="home"></section>
+    <section class="landing" id="home">
+      <div class="scroll">
+        <a href="#about"><span></span></a>
+      </div>
+    </section>
     <section class="about-spacer" id="about">
       <div class="container">
         <div class="about">
