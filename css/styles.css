@@ -285,7 +285,7 @@ header nav ul.default-menu li:first-child::before {
 }
 
 header nav ul.default-menu li a {
-  color: rgb(170, 170, 170);
+  color: #cecece;
   font-family: "Raleway", sans-serif;
   font-size: 12px;
   letter-spacing: 2px;
@@ -331,7 +331,7 @@ header nav .hamburger-overlay .hamburger-menu li {
 
 header nav .hamburger-overlay .hamburger-menu li a,
 header nav .hamburger-overlay .hamburger-menu li i {
-  color: rgb(170, 170, 170);
+  color: #cecece;
   font-size: 28px;
   letter-spacing: 2px;
   text-transform: uppercase;
