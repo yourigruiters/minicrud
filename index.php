@@ -58,7 +58,7 @@
           </p>
           <form action="">
               <div class="input-container">
-                <label>Naam</label>
+                <label>Full name</label>
                 <input type="text" placeholder="Juan Pedro" />
               </div>
               <div class="input-container">
@@ -66,11 +66,11 @@
                 <input type="email" placeholder="juanpedro@info.org" />
               </div>
               <div class="input-container">
-                <label>Aantal personen</label>
+                <label>Amount of people</label>
                 <input type="number" placeholder="2" />
               </div>
               <div class="input-container">
-                <label>Restaurant</label>
+                <label>Restaurant location</label>
                 <select>
                   <option value="">Tangamanga</option>
                   <option value="">Vértiz</option>
@@ -78,7 +78,7 @@
                 </select>
               </div>
               <div class="input-container">
-                <label>Datum</label>
+                <label>Date and time</label>
                 <input type="datetime-local" />
               </div>
               <div class="input-container">
@@ -140,12 +140,144 @@
     <section class="menu-spacer" id="menu">
       <div class="menu">
         <div class="image"></div>
-        <div class="content">
+        <div class="menu-details">
           <div class="heading">
-            <h3 class="dancing">See our menu</h3>
+            <h4 class="dancing">Starters</h4>
             <div class="divider">
               <hr />
               <i class="fa-solid fa-pepper-hot"></i>
+            </div>
+          </div>
+          <div class="content">
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+          </div>
+          <div class="heading yellow">
+            <h4 class="dancing">Main</h4>
+            <div class="divider">
+              <hr />
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+          </div>
+          <div class="content">
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+          </div>
+          <div class="heading green">
+            <h4 class="dancing">Deserts</h4>
+            <div class="divider">
+              <hr />
+              <i class="fa-solid fa-ice-cream"></i>
+            </div>
+          </div>
+          <div class="content">
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
+            </div>
+            <div class="menu-item">
+              <div class="details">
+                <p class="title">Jalapeno Poppers</p>
+                <p class="description">Jalapeno, cheese, rice</p>
+              </div>
+              <div class="price"><p>€ 10.00</p></div>
             </div>
           </div>
         </div>
