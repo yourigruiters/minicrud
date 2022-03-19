@@ -63,7 +63,7 @@ form.addEventListener("submit", (e) => {
         messageText.innerHTML =
           "Your reservation has been succesfully created.";
       },
-      error: (e) => {
+      error: () => {
         form.style.display = "none";
         message.style.display = "flex";
         messageText.innerHTML =

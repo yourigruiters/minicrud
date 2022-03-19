@@ -975,7 +975,6 @@ section {
 .menu .menu-details .content .menu-item {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 47%;
   height: auto;
   margin-bottom: 30px;
@@ -985,7 +984,7 @@ section {
 .menu .menu-details .content .menu-item .details {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 
@@ -999,16 +998,19 @@ section {
 
 .menu .menu-details .content .menu-item .details .description {
   font-size: 14px;
+  line-height: 22px;
   color: var(--grayOnWhite);
   font-weight: 400;
   font-family: "Raleway", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .menu .menu-details .content .menu-item .price {
   display: flex;
   justify-content: end;
   align-items: start;
-  width: 30%;
+  width: 20%;
   height: 100%;
 }
 
