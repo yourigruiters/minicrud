@@ -138,6 +138,9 @@
       </div>
     </section>
     <section class="menu-spacer" id="menu">
+      <?php
+        include_once('includes/connect.php');
+      ?>
       <div class="menu">
         <div class="image"></div>
         <div class="menu-details">
