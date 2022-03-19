@@ -191,27 +191,6 @@ header nav.sticky {
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
 
-header nav .logo {
-  display: none;
-}
-
-header nav.sticky .logo {
-  position: fixed;
-  top: -100px;
-  left: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  width: 250px;
-  height: 250px;
-  padding-bottom: 20px;
-  background-color: black;
-  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
-  border-radius: 50%;
-}
-
 header nav.sticky .logo img {
   width: 125px;
   height: 125px;
@@ -345,10 +324,6 @@ header nav .hamburger-overlay .hamburger-menu li i {
     font-size: 12px;
     letter-spacing: 1px;
   }
-
-  header nav.sticky ul.default-menu {
-    justify-content: end;
-  }
 }
 
 @media only screen and (max-width: 940px) {
@@ -357,10 +332,6 @@ header nav .hamburger-overlay .hamburger-menu li i {
   }
 
   header .introduction-spacer .introduction .options {
-    display: none;
-  }
-
-  header nav.sticky .logo {
     display: none;
   }
 
@@ -668,6 +639,27 @@ section {
   background-color: var(--white);
 }
 
+.reservation .reservation-message {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 130px;
+  border: 3px solid rgba(161, 161, 161, 0.3);
+  padding: 30px;
+}
+
+.reservation .reservation-message p {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 700;
+  font-family: "Open sans", sans-serif;
+  margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 900px) {
   .reservation h3 {
     font-size: 40px;
@@ -681,6 +673,15 @@ section {
 
   .reservation form .input-container {
     width: 100%;
+  }
+
+  .reservation .reservation-message {
+    border: 2px solid rgba(161, 161, 161, 0.3);
+    padding: 15px;
+  }
+
+  .reservation .reservation-message p {
+    font-size: 18px;
   }
 }
 

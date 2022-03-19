@@ -32,9 +32,6 @@
         </div>
     </section>
     <nav>
-        <div class="logo">
-            <a href="#top"><img src="media/logo.png" alt="logo" /></a>
-        </div>
         <div class="container">
             <ul class="default-menu">
                 <li><a href="#home">Home</a></li>

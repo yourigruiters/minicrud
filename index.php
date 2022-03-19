@@ -56,36 +56,40 @@
             perspiciatis facilis quaerat maiores omnis laudantium. Lorem ipsum
             dolor semit.
           </p>
-          <form action="">
+          <form id='reserve'>
               <div class="input-container">
                 <label>Full name</label>
-                <input type="text" placeholder="Juan Pedro" />
+                <input type="text" placeholder="Juan Pedro" required/>
               </div>
               <div class="input-container">
                 <label>Email adres</label>
-                <input type="email" placeholder="juanpedro@info.org" />
+                <input type="email" placeholder="juanpedro@info.org" required/>
               </div>
               <div class="input-container">
                 <label>Amount of people</label>
-                <input type="number" placeholder="2" />
+                <input type="number" placeholder="2"required />
               </div>
               <div class="input-container">
                 <label>Restaurant location</label>
-                <select>
-                  <option value="">Tangamanga</option>
-                  <option value="">Vértiz</option>
-                  <option value="">Narvarte</option>
+                <select required>
+                  <option disabled>Select an option...</option>
+                  <option value="Tangamanga">Tangamanga</option>
+                  <option value="Vértiz">Vértiz</option>
+                  <option value="Narvarte">Narvarte</option>
                 </select>
               </div>
               <div class="input-container">
                 <label>Date and time</label>
-                <input type="datetime-local" />
+                <input type="datetime-local" required/>
               </div>
               <div class="input-container">
                 <label></label>
                 <button type="submit">Make reservation</button>
               </div>
           </form>
+          <div class="reservation-message">
+            <p></p>
+          </div>
         </div>
       </div>
     </section>
@@ -300,5 +304,6 @@
     ?>
     <script src="js/jQuery.js"></script>
     <script async src="js/main.js"></script>
+    <script async src="js/reservation.js"></script>
   </body>
 </html>
