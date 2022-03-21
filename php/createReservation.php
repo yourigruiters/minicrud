@@ -3,9 +3,8 @@
 
     if (isset($_POST['token']) && $_POST['token'] === 'reservation')
     {
-        $status = 1;
-        $sql = "INSERT INTO reservations (name, email, amount, location, date, time, status) 
-            VALUES (:name,:email,:amount,:location,:date, :time, :status)";
+        $sql = "INSERT INTO reservations (name, email, amount, location, date, time) 
+            VALUES (:name,:email,:amount,:location,:date, :time)";
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(":name", $_POST['name']);
         $stmt->bindParam(":email", $_POST['email']);
@@ -13,9 +12,8 @@
         $stmt->bindParam(":location", $_POST['location']);
         $stmt->bindParam(":date", $_POST['date']);
         $stmt->bindParam(":time", $_POST['time']);
-        $stmt->bindParam(":status", $status);
         $stmt->execute();
 
         echo 'true';
-    } 
+    }
 ?>
