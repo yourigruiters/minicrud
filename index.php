@@ -30,7 +30,7 @@
       <div class="container">
         <div class="about">
           <div class="heading">
-            <h3 class="dancing">About us</h3>
+            <h3 class="dancing">About us!</h3>
             <div class="divider">
               <hr />
               <i class="fa-solid fa-pepper-hot"></i>
