@@ -19,5 +19,3 @@
         exit();        
     }
 ?>
-
-UPDATE `products` SET `name` = 'sdgdf' WHERE `products`.`id` = 18;

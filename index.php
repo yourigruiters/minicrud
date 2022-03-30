@@ -146,7 +146,7 @@
         <div class="image"></div>
         <div class="menu-details">
           <?php 
-            include('php/readProducts.php');
+            include('php/menu.php');
           ?>
         </div>
       </div>

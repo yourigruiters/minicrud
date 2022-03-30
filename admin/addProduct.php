@@ -40,7 +40,7 @@
                     <div class="input">
                         <label>Category</label>
                         <select name="category" required>
-                        <option disabled>Select an option...</option>
+                          <option option disabled>Select an option...</option>
                             <option value="starter">Starter</option>
                             <option value="main">Main</option>
                             <option value="desert">Desert</option>

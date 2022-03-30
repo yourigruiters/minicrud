@@ -26,6 +26,8 @@ const checkForm = () => {
   if (!issues) {
     return true;
   }
+
+  return false;
 };
 
 form.addEventListener("submit", (e) => {
@@ -43,15 +45,6 @@ form.addEventListener("submit", (e) => {
     const date = dateAndTime[0];
     const time = dateAndTime[1];
 
-    console.log({
-      token: "reservation",
-      name,
-      email,
-      amount,
-      location,
-      date,
-      time,
-    });
     $.ajax({
       url: "php/createReservation.php",
       type: "post",
