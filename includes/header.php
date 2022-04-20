@@ -8,7 +8,7 @@
                 <li>
                     <a href="#"
                     ><i class="fa-solid fa-house"></i>
-                    <p>Tangamanga, San Luis</p></a
+                    <p>Tangamanga, San Jose</p></a
                     >
                 </li>
                 </ul>
